@@ -1,0 +1,257 @@
+body {
+    width: 100%;
+}
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    width: 65vw;    
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+header h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+    width: 40%;
+}
+#inspirationDrp {
+    grid-column-start: 1;
+}
+
+#abtDev {
+    grid-column-start: 2;
+}
+
+#reset {
+    width: 5%;
+    position: absolute;
+    top: 6%;
+    left: 4%;
+}
+
+#getStarted {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    z-index: 888;
+}
+
+.randomEventPrompt {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    z-index: 999;
+}
+
+#randomClickImg:hover {
+    transform: scale(1.05);
+}
+
+
+#randomClickImg:active {
+    transform: rotate(45deg);
+}
+
+.randomClickButton0 {
+    position: absolute;
+    z-index: 999998;
+    top: 10%;
+    left: 8%;
+}
+
+.randomClickButton0 img {
+    width: 20%
+}
+
+.randomClickButton0 div {
+    position: absolute;
+    width: 3%;
+    z-index: 999999;
+    top: 50%;
+    left: 7%;
+}
+
+.randomClickButton1 {
+    /* position: absolute;
+    z-index: 999998;
+    top: 10%;
+    right: 8%; */
+}
+
+.randomClickButton1 img {
+    width: 20%;
+    position: absolute;
+    z-index: 999998;
+    top: 10%;
+    right: 8%;
+}
+
+.randomClickButton1 div {
+    position: absolute;
+    width: 3%;
+    z-index: 999999;
+    top: 31.5%;
+    right: 16%;
+}
+
+.randomClickButton2 img {
+    width: 20%;
+    position: absolute;
+    z-index: 999998;
+    top: 55%;
+    right: 5%;
+}
+
+.randomClickButton2 div {
+    position: absolute;
+    width: 3%;
+    z-index: 999999;
+    top: 77%;
+    right: 13.5%;
+}
+
+.randomClickButton3 img {
+    width: 20%;
+    position: absolute;
+    z-index: 999998;
+    top: 55%;
+    left: -2%;
+}
+
+.randomClickButton3 div {
+    position: absolute;
+    width: 3%;
+    z-index: 999999;
+    top: 77%;
+    left: 5%;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    align-items: end;
+    height: 75vh;
+    /* margin-top: 5rem; */
+}
+
+#clickMultiplierSection {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    text-align: center;
+}
+
+#multiplierPurchase {
+    width: 15vw;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 0 auto;
+    position: relative;
+    left: 15%;
+    top: 5%;
+}
+
+#multiplierDiv {
+
+    position: absolute;
+    width: 15%;
+    top: 42%;
+    left: 12.5%;
+    padding: .5em;
+}
+
+#multiplierInfo {
+    position: absolute;
+    width: 15%;
+    left: 12.4%;
+    top: 56%
+}
+
+#multiplierPurchase.unavailable:hover #multiplierInfo {
+    display:grid;
+}
+
+#donutClickerSection {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#make {
+    width: 30vw;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 0 auto;
+    position: relative;
+    top: -10%;
+}
+
+#countDiv {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    min-width: 12%;
+    top: 76%;
+    left: 42%;
+    padding: .5em;
+}
+
+#countText {
+    grid-row-start: 1;
+}
+
+#clickValue {
+    grid-row-start: 2;
+}
+
+
+#autoClickerSection {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+#autoClickerSection img {
+    width: 13vw;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: 0 auto;
+    position: relative;
+    right: 30%;
+    top: 10%;
+}
+
+#autoClickerDiv {
+    position: absolute;
+    width: 15%;
+    top: 35%;
+    right: 2.5%;
+    padding: .6em;
+}
+
+#autoClickerInfo {
+    position: absolute;
+    width: 15%;
+    right: 17.5%;
+    top: 57%;
+}
+
+#autoClickerSection img.unavailable:hover #autoClickerInfo {
+    display: grid;
+}
+
+.clickStormButtonClass{
+    cursor: pointer;
+    position: absolute;
+    z-index: 99999;
+    top: 30%;
+    left: 26%;
+}

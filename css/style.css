@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:wght@100&family=Work+Sans:wght@100;200&display=swap');
+
+* {
+  margin: 0;
+  cursor: url("/images/OvenMit.cur"), auto;
+}
+
+body {
+  background-image: url("/images/Bakery\ 1.jpg");
+  background-size: 250vh;
+  /* background-color: black; */
+  background-repeat: no-repeat;
+  cursor: url("/images/OvenMit.cur"), auto;
+}
+
+.containerBlur > * > * {
+  filter: blur(4px);
+}
+
+header {
+  background-color: rgb(248, 191, 201) ;
+  color: purple;
+  border: solid rgb(252, 240, 240) 15px;
+  border-radius: 5px;
+}
+
+.headerNoBlur > * > * > * > * {
+  filter: none;
+
+}
+
+header h1 {
+  font-family: 'Oleo Script', cursive;
+  background-color: rgb(248, 191, 201) ;
+  color: purple;
+  /* border: solid rgb(252, 240, 240) 15px; */
+  padding: 16px;
+  font-size: 40px;
+  margin-bottom: -20px;
+}
+
+.dropbtn {
+    font-family: 'Taviraj', serif;
+    background-color: transparent ;
+    color: purple;
+    padding: 2px;
+    font-size: 20px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    
+    /* display: inline-block; */
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+
+    transform: translate(-64px, 0px);
+    border: solid rgb(252, 240, 240) 15px;
+    border-radius: 5px;
+    background-color: rgb(248, 191, 201) ;
+    min-width: 160px;
+    width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  
+  .dropdown-content p, a {
+    color: purple;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a{
+    cursor: pointer;
+  }
+
+  .dropdown-content a:hover {
+    transform: scale(1.2);
+  }
+    
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {
+    transform: scale(1.2);
+    /* background-color: #3e8e41; */
+    /* border: solid white; */
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .unavailable {
+    filter: grayscale() blur(5px);
+  }
+
+  .unavailable:hover {
+    filter: grayscale() blur(9px);
+  }
+
+  .available {
+    filter: none;
+  }
+
+  #reset {
+    cursor:pointer;
+    background-color: rgb(248, 191, 201) ;
+    color: purple;
+    border: solid rgb(252, 240, 240) 7.5px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+  }
+
+  #getStarted {
+    background-color: rgb(248, 191, 201) ;
+    color: purple;
+    border: solid rgb(252, 240, 240) 15px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .randomEventPrompt {
+    pointer-events: none;
+    font-size: 30px;
+    background-color: rgb(248, 191, 201) ;
+    color: purple;
+    border: solid rgb(252, 240, 240) 15px;
+    border-radius: 5px;
+    padding: 20px;
+    filter: none;
+  }
+
+  #randomClickValueDiv {
+    cursor:pointer;
+    pointer-events: none;
+    background-color: rgb(248, 191, 201) ;
+    color: purple;
+    border: solid rgb(252, 240, 240) 7.5px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    filter: none;
+  }
+
+  #randomClickImg {
+    cursor: pointer;
+    filter: none;
+  }
+
+  #reset h3 {
+    pointer-events: none;
+  }
+
+  #reset:hover {
+    transform: scale(1.1);
+  }
+
+  #multiplierPurchase {
+    cursor: pointer;
+  }
+
+  #multiplierPurchase.available:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+#multiplierPurchase.available:active {
+  transform: scale(1) rotate(-10deg);
+}
+
+  #multiplierDiv {
+    background-color: rgb(248, 191, 201) ;
+    color: purple;
+    border: solid rgb(252, 240, 240) 15px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  #multiplierInfo {
+    pointer-events: none;
+    background-color: rgb(248, 191, 201) ;
+    color: purple;
+    border: solid rgb(252, 240, 240) 15px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  #make {
+    cursor:pointer;
+  }
+
+  #make:hover {
+    transform: scale(1.05);
+  }
+
+  #make:active {
+    transform: scale(1) rotate(45deg);
+
+  }
+
+  #countDiv {
+    pointer-events: none;
+    background-color: rgb(248, 191, 201) ;
+    color: purple;
+    border: solid rgb(252, 240, 240) 15px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  #autoClickerSection img {
+    cursor: pointer;
+  }
+
+  #autoClickerSection img.available:hover {
+    transform: scale(1.02) rotate(-10deg);
+  }
+
+#autoClickerSection img.available:active {
+  transform: scale(1) rotate(10deg);
+  }
+
+  #autoClickerDiv {
+    background-color: rgb(248, 191, 201) ;
+    color: purple;
+    border: solid rgb(252, 240, 240) 15px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  #autoClickerInfo {
+    pointer-events: none;
+    background-color: rgb(248, 191, 201) ;
+    color: purple;
+    border: solid rgb(252, 240, 240) 15px;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .clickStormButtonClass {
+    color: white;
+    background: radial-gradient(circle, rgba(255,98,98,1) .005%, rgba(255,0,0,1) 50%);    border: none;
+    padding: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 60px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    border: solid rgb(252, 240, 240) 15px;
+    filter: none;
+  }
